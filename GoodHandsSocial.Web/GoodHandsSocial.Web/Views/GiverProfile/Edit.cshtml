@@ -1,0 +1,93 @@
+﻿@model GoodHands.Domain.Model.Models.GiverProfile
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Editar perfil</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="GiverName" class="control-label"></label>
+                <input asp-for="GiverName" class="form-control" />
+                <span asp-validation-for="GiverName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GiverLastName" class="control-label"></label>
+                <input asp-for="GiverLastName" class="form-control" />
+                <span asp-validation-for="GiverLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Birthday" class="control-label"></label>
+                <input asp-for="Birthday" class="form-control" />
+                <span asp-validation-for="Birthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Biografy" class="control-label"></label>
+                <input asp-for="Biografy" class="form-control" />
+                <span asp-validation-for="Biografy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ZipCode" class="control-label"></label>
+                <input asp-for="ZipCode" class="form-control" />
+                <span asp-validation-for="ZipCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddressDetails" class="control-label"></label>
+                <input asp-for="AddressDetails" class="form-control" />
+                <span asp-validation-for="AddressDetails" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="LegalStatus" /> @Html.DisplayNameFor(model => model.LegalStatus)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsDonor" /> @Html.DisplayNameFor(model => model.IsDonor)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsExchanger" /> @Html.DisplayNameFor(model => model.IsExchanger)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-check">
+                <label asp-for="ImageUri" class="control-label"></label>
+                <img src="@Model.ImageUri" style="width: 100px"/>
+                <input type="file" name="file" class="form-control" accept=".jpg" required/>
+                <input type="hidden" asp-for="ImageUri"/>
+
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

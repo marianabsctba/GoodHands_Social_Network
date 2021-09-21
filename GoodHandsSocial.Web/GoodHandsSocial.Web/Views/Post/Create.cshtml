@@ -1,0 +1,25 @@
+﻿@model GoodHands.Domain.Model.Models.Post
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<form asp-action="Create"  method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="card mb-0">
+        <textarea asp-for="Text" cols="30" rows="6" class="form-control" placeholder="O que você deseja compartilhar?"></textarea>
+        <span asp-validation-for="Text" class="text-danger"></span>
+        <div class="p-2">
+            <button type="submit" class="btn btn-success btn-sm float-right">
+                <i class="material-icons md-18 align-middle">send</i>
+                <span class="align-middle">Post</span>
+            </button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+}
