@@ -319,7 +319,6 @@ A rede social Good Hands será baseada, a princípio, nas principais classes aba
 * *Group*: será possível criar e ingressar em grupos.
 * *Invitation*: membros poderão convidar outros membros para serem amigos. 
 * *RegisterProduct*: membros poderão registrar bens para troca ou doações com outros membros.
- <img src="diagrama-classe.png" alt="c2">  
       
 ---      
  
