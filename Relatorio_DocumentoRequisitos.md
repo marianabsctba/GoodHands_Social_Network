@@ -18,8 +18,7 @@
       
       
       
-      Link Azure (pode infelizmente apresentar problemas, como comuniquei :( https://app-gh-social.azurewebsites.net/Identity/Account/Login?ReturnUrl=%2F)
-
+      Link Azure, contendo as alterações requeridas pelo Feedback dos TP's 8 e 9: https://app-goodhands.azurewebsites.net/
 
   
 ## Histórico de revisão
@@ -34,6 +33,7 @@
 | 11/08/2021  | 07 | Início da implantação do projeto | Mariana Buhrer Sukevicz |
 | 30/08/2021  | 08  | Tentativa de publicação de projeto parcial no Azure | Mariana Buhrer Sukevicz |
 | 13/09/2021  | 09  | Entrega parcial de versão minimalista do projeto | Mariana Buhrer Sukevicz |
+| 20/09/2021  | 09  | Correções requeridas nos TPs 8 e 9 - perfil | Mariana Buhrer Sukevicz |
 
 
 
