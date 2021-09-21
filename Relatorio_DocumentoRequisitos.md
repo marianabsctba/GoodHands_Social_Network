@@ -19,6 +19,7 @@
       
       
       Link Azure, contendo as alterações requeridas pelo Feedback dos TP's 8 e 9: https://app-goodhands.azurewebsites.net/
+      Link vídeo de apresentação: https://drive.google.com/file/d/1s4FMH3OF8S9PUALptxwSzrUE7PYZbTHv/view?usp=sharing
 
   
 ## Histórico de revisão
